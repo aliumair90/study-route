@@ -2,12 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer
-    // className=" text-white "
-    // style={{
-    //   backgroundImage: "url('map_grey.png')",
-    // }}
-    >
+    <footer>
       <div className="bg-navyblue text-white opacity-100 py-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8">
@@ -45,115 +40,146 @@ const Footer = () => {
               <p className="mb-2">Address: xyz, Lahore</p>
             </div>
 
-            {/* Destinations */}
-            {/* <div>
-              <h3 className="text-lg font-semibold mb-4">Destination</h3>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#">
+            {/* Navigation Links */}
+            <div className="md:hidden grid grid-cols-2">
+              <div className="">
+                <h3 className="text-lg font-semibold mb-4">Navigation</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <a href="/">
+                      <span>
+                        <i className="fas fa-chevron-right me-1"></i>
+                      </span>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about-us">
+                      <span>
+                        <i className="fas fa-chevron-right me-1"></i>
+                      </span>
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="study-destination">
+                      <span>
+                        <i className="fas fa-chevron-right me-1"></i>
+                      </span>
+                      Study Destination
+                    </a>
+                  </li>
+                  <li>
+                    <a href="online-consultant">
+                      <span>
+                        <i className="fas fa-chevron-right me-1"></i>
+                      </span>
+                      Online Consultant
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              {/* Useful Links */}
+              <div className=" block">
+                <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
+                <ul className="space-y-2">
+                  <li>
                     <span>
                       <i className="fas fa-chevron-right me-1"></i>
                     </span>
-                    Study in UK
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
+                    <a href="/about-us">About Us</a>
+                  </li>
+                  <li>
                     <span>
                       <i className="fas fa-chevron-right me-1"></i>
                     </span>
-                    Study in USA
-                  </a>
-                </li>
-                <li>
-                  <span>
-                    <i className="fas fa-chevron-right me-1"></i>
-                  </span>
-                  <a href="#">Study in Aus</a>
-                </li>
-                <li>
-                  <span>
-                    <i className="fas fa-chevron-right me-1"></i>
-                  </span>
-                  <a href="#">Study in Canada</a>
-                </li>
-                <li>
-                  <span>
-                    <i className="fas fa-chevron-right me-1"></i>
-                  </span>
-                  <a href="#">Study in Malay</a>
-                </li>
-                <li>
-                  <span>
-                    <i className="fas fa-chevron-right me-1"></i>
-                  </span>
-                  <a href="#">Study in Turkey</a>
-                </li>
-              </ul>
-            </div> */}
-            <div>
-              {/* <h3 className="text-lg font-semibold mb-4">Destination</h3> */}
-              <div>
-                <span>
-                  <i className="fas fa-chevron-right me-1"></i>
-                </span>
-
-                <a href="/">HOME</a>
+                    <a href="/contact-us">Contact Us</a>
+                  </li>
+                  <li>
+                    <span>
+                      <i className="fas fa-chevron-right me-1"></i>
+                    </span>
+                    <a href="/privacy">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <span>
+                      <i className="fas fa-chevron-right me-1"></i>
+                    </span>
+                    <a href="/faq">FAQs</a>
+                  </li>
+                </ul>
               </div>
-
-              <span>
-                <i className="fas fa-chevron-right mt-5  me-1"></i>
-              </span>
-              <a href="about-us">About Us</a>
-              <div>
-                <span>
-                  <i className="fas fa-chevron-right mt-5 me-1"></i>
-                </span>
-
-                <a href="study-destination">Study Destination</a>
-              </div>
-
-              <span>
-                <i className="fas fa-chevron-right mt-5 me-1"></i>
-              </span>
-              <a href="online-consultant">Online Consultant</a>
             </div>
+            {/* Last Two Grid Items Displayed Side by Side on Mobile */}
+            <div className="hidden md:grid md:col-span-2 grid-cols-1 sm:grid-cols-2 gap-8">
+              <div>
+                <h3 className="text-lg font-semibold mb-4">Navigation</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <a href="/">
+                      <span>
+                        <i className="fas fa-chevron-right me-1"></i>
+                      </span>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="about-us">
+                      <span>
+                        <i className="fas fa-chevron-right me-1"></i>
+                      </span>
+                      About Us
+                    </a>
+                  </li>
+                  <li>
+                    <a href="study-destination">
+                      <span>
+                        <i className="fas fa-chevron-right me-1"></i>
+                      </span>
+                      Study Destination
+                    </a>
+                  </li>
+                  <li>
+                    <a href="online-consultant">
+                      <span>
+                        <i className="fas fa-chevron-right me-1"></i>
+                      </span>
+                      Online Consultant
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-            {/* Useful Links */}
-            <div>
-              <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
-              <ul className="space-y-2">
-                <li>
-                  <span>
-                    <i className="fas fa-chevron-right me-1"></i>
-                  </span>
-                  <a href="/about-us">About Us</a>
-                </li>
-                <li>
-                  <span>
-                    <i className="fas fa-chevron-right me-1"></i>
-                  </span>
-                  <a href="/contact-us">Contact Us</a>
-                </li>
-                <li>
-                  <span>
-                    <i className="fas fa-chevron-right me-1"></i>
-                  </span>
-                  <a href="/privacy">Privacy Policy</a>
-                </li>
-                <li>
-                  <span>
-                    <i className="fas fa-chevron-right me-1"></i>
-                  </span>
-                  <a href="/faq">FAQs</a>
-                </li>
-                {/* <li>
-                  <span>
-                    <i className="fas fa-chevron-right me-1"></i>
-                  </span>
-                  <a href="#">IELTS Preparation</a>
-                </li> */}
-              </ul>
+              <div>
+                <h3 className="text-lg font-semibold mb-4">Useful Links</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <span>
+                      <i className="fas fa-chevron-right me-1"></i>
+                    </span>
+                    <a href="/about-us">About Us</a>
+                  </li>
+                  <li>
+                    <span>
+                      <i className="fas fa-chevron-right me-1"></i>
+                    </span>
+                    <a href="/contact-us">Contact Us</a>
+                  </li>
+                  <li>
+                    <span>
+                      <i className="fas fa-chevron-right me-1"></i>
+                    </span>
+                    <a href="/privacy">Privacy Policy</a>
+                  </li>
+                  <li>
+                    <span>
+                      <i className="fas fa-chevron-right me-1"></i>
+                    </span>
+                    <a href="/faq">FAQs</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
 

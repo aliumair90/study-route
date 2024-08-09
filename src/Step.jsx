@@ -1,5 +1,4 @@
 import React from "react";
-import University from "./University";
 import Test1 from "./Test1";
 
 const steps = [
@@ -58,7 +57,7 @@ const steps = [
 const StepProcess = () => {
   return (
     <>
-      <div className="text-center pt-10 font-bold text-4xl">
+      <div className="text-center pt-10 font-bold text-xl md:text-4xl">
         <h1 className="mx-auto">The Study Route Roadmap to Study Abroad</h1>
       </div>
       <div className="text-center pt-8">
@@ -71,10 +70,10 @@ const StepProcess = () => {
         </p>
       </div>
       <div className="roadmap bg-white py-10">
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl md:mx-auto space-y-8 mx-4 ">
           {steps.map((step, index) => (
             <div key={index} className="point flex items-center">
-              <div className="point-index flex items-center justify-center bg-blue-900 text-white border-4 border-yellow-500 rounded-full h-10 w-10 text-lg font-bold">
+              <div className="point-index flex items-center justify-center bg-grottoblue text-white border-4 border-grottoblue rounded-full h-10 w-10 text-lg font-bold">
                 {step.number}
               </div>
               <div className="point-label flex items-center ml-4 space-x-4">
@@ -82,11 +81,11 @@ const StepProcess = () => {
                   src={step.icon}
                   trigger="loop"
                   delay="1000"
-                  colors="primary:#000066,secondary:#ffd700"
+                  colors="primary:#189AB4,secondary:#75E6DA"
                   stroke="bold"
                   style={{ width: "80px", height: "80px" }}
                 />
-                <h5 className="text-blue-900 font-medium text-lg">
+                <h5 className="text-navyblue font-medium text-sm md:text-lg">
                   {step.title}
                 </h5>
               </div>

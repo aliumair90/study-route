@@ -13,9 +13,9 @@ const Home = () => {
               Global Education
             </h1>
             <p className="text-lg mb-8">
-              Study Route Overseas Education is one of the best education
-              consultants in Pakistan. Explore global opportunities with expert
-              advice. Personalized support awaits. Consult today!
+              Study Route is one of the best education consultants in Pakistan.
+              Explore global opportunities with expert advice. Personalized
+              support awaits. Consult today!
             </p>
             <a
               href="/contact-us"
@@ -37,18 +37,14 @@ const Home = () => {
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row">
             {/* Text Section */}
-            <div className="flex-1 mb-8 md:mb-0">
+            <div className="flex-1 mb-5 md:mb-0">
               <h1 className="text-grottoblue text-xl mb-2">Introduction</h1>
               <h2 className="text-4xl font-bold mb-4">Study Route</h2>
-              <h3 className="text-2xl mb-4">Overseas Education Pvt. Ltd.</h3>
               <p className="text-gray-700 mb-6">
-                Study Route Overseas Education is one of the fastest-growing
-                study abroad and education consultants in Pakistan. Established
-                in December 2018, the company is working in several cities
-                across the country with its head office based in Lahore. Study
-                Route Overseas Education provides services to students regarding
-                their admissions to foreign universities and helps them in
-                interviews and the visa filing process.
+                At Study Route, we empower students to achieve their academic
+                and professional goals by providing expert guidance and support.
+                Our mission is to help you navigate the complex educational
+                landscape and find the best path to success.
               </p>
               <a
                 href="/about-us"

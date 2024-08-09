@@ -17,7 +17,7 @@ const Test1 = () => {
   return (
     <>
       <div className="bg-gray-50">
-        <div className="text-6xl text-center font-bold pt-10">
+        <div className=" text-3xl md:text-6xl text-center font-bold pt-10 ">
           <h1>Universities</h1>
         </div>
         <div className="text-base pt-5 w-[70%] mx-auto text-center">
@@ -29,8 +29,10 @@ const Test1 = () => {
             why we give them the best of our services.
           </p>
         </div>
-
-        <div className="flex w-[80%] mx-auto mt-12">
+        <div className="w-full md:w-auto  bg-white   my-2">
+          <ImageComponent src="Universities.webp" alt="" />
+        </div>
+        {/* <div className="flex w-[80%] mx-auto mt-12">
           <div className="flex flex-wrap mt-14 mx-2">
             <div className="w-full md:w-auto border rounded-lg bg-white shadow-lg  my-2 ">
               <ImageComponent src="U1.png" alt="" />
@@ -86,7 +88,7 @@ const Test1 = () => {
               <ImageComponent src="U16.png" alt="" />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
       <br />
       <br />

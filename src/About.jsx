@@ -14,17 +14,14 @@ const About = () => {
         <br />
         <div className="w-[80%] mx-auto text-center  font-semibold ">
           <p>
-            Study Route stands as a dynamic force in the overseas education and
-            immigration consultancy business, proudly contributing its expertise
-            since April 2004. Serving a vital link between prospective students
-            and universities as our profound commitment, our mission is to
-            facilitate a seamless selection process, guiding students to choose
-            the best foreign education institute tailored to their academic
-            requirements.
+            At Study Route, we empower students to achieve their academic and
+            professional goals by providing expert guidance and support. Our
+            mission is to help you navigate the complex educational landscape
+            and find the best path to success.
           </p>
           <br />
           <p>
-            Our vision at TIMES is to set new benchmarks in the education
+            Our vision at Study Route is to set new benchmarks in the education
             consultancy field, upholding performance excellence. Drawing from
             real-world experiences in problem-solving and equipped with
             practical insights into the ever-changing landscape of admissions,

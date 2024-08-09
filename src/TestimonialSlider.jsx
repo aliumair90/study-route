@@ -19,7 +19,7 @@ const testimonials = [
     name: "Ali Nadeem",
     role: "Student",
     review:
-      "Great Experience. Must visit this place because the staff is so cooperative and hardworking to fulfill the desire of students. Those who want to go abroad...",
+      "The counsellors at Study Route respond promptly and well equipped with the knowledge of various foreign universities. They are best education consultants in...",
     source: "Google",
     avatar: "A",
   },
@@ -28,7 +28,7 @@ const testimonials = [
     name: "Rehman Butt",
     role: "Student",
     review:
-      "Alhamdulilah I got my UK visa with the help of Paragon. I really recommend Paragon because they tell everything so clearly. The staff are very helpful and they help...",
+      "Alhamdulilah I got my UK visa with the help of Study Route. I really recommend Paragon because they tell everything so clearly. The staff are very helpful and they help...",
     source: "Google",
     avatar: "R",
   },

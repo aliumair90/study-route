@@ -10,17 +10,17 @@ const benefits = [
   },
   {
     title: "Our Vision",
-    text: "We see a future in which technology absorbs large immigrant populations due to a growing global labor and skill gap. Our goal is to develop the greatest potential and support individuals as they aspire to immigrate and succeed in achieving their goals.",
+    text: "To become the leading educational consultancy firm, renowned for our personalized approach, expertise, and commitment to excellence.",
     icon: "/Vision.png", // Replace with your actual image path
   },
   {
-    title: "Our Practice",
-    text: "When it comes to seeking or accepting professional interactions, we shall only look for or accept engagements that fit our appropriate expertise and knowledge. Ensure our resources are adequate to fulfill the engagement. Conduct negotiations for engagements conducive to their professional services ethically and properly. Exercise independent thought and action.",
+    title: "Our Service",
+    text: "University and course selection  Application and admission guidance Scholarship and visa assistance Career counseling and mentorship Academic and exam preparation support",
     icon: "/Practice.png", // Replace with your actual image path
   },
   {
     title: "Our Principles",
-    text: "In the realm of educational consultancy, Times is committed to: Striving to elevate the professional standards of an education consultancy. Endeavoring to enhance the overall quality of services. Upholding elevated standards of conduct.",
+    text: "In the realm of educational consultancy, Study Routr is committed to: Striving to elevate the professional standards of an education consultancy. Endeavoring to enhance the overall quality of services. Upholding elevated standards of conduct.",
     icon: "/Principle.png", // Replace with your actual image path
   },
 ];
@@ -31,7 +31,7 @@ const Benefits = () => {
       <div className="bg-gray-50  py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center  mb-12">
-            Benefits to Visit Times Consultant
+            Benefits to Visit Study Route
           </h2>
           <div className="grid grid-cols-1 bg-grottoblue w-[95%] py-9 mx-auto sm:grid-cols-2 gap-4">
             {benefits.map((benefit, index) => (
