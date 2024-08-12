@@ -1,4 +1,6 @@
 import React from "react";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Test1 from "./Test1";
 
 const steps = [
@@ -71,29 +73,52 @@ const StepProcess = () => {
       </div>
       <div className="roadmap bg-white py-10">
         <div className="max-w-4xl md:mx-auto space-y-8 mx-4 ">
-          {steps.map((step, index) => (
-            <div key={index} className="point flex items-center">
-              <div className="point-index flex items-center justify-center bg-grottoblue text-white border-4 border-grottoblue rounded-full h-10 w-10 text-lg font-bold">
-                {step.number}
-              </div>
-              <div className="point-label flex items-center ml-4 space-x-4">
-                <lord-icon
-                  src={step.icon}
-                  trigger="loop"
-                  delay="1000"
-                  colors="primary:#189AB4,secondary:#75E6DA"
-                  stroke="bold"
-                  style={{ width: "80px", height: "80px" }}
-                />
-                <h5 className="text-navyblue font-medium text-sm md:text-lg">
-                  {step.title}
-                </h5>
-              </div>
-            </div>
-          ))}
+          {steps.map((step, index) => {
+            const { ref, inView } = useInView({
+              triggerOnce: true,
+              threshold: 0.1,
+            });
+            const controls = useAnimation();
+
+            React.useEffect(() => {
+              if (inView) {
+                controls.start({ opacity: 1, x: 0, scale: 1 });
+              } else {
+                controls.start({ opacity: 0, x: 50, scale: 0.9 });
+              }
+            }, [inView, controls]);
+
+            return (
+              <motion.div
+                key={index}
+                ref={ref}
+                className="point flex items-center"
+                initial={{ opacity: 0, x: 50, scale: 0.9 }}
+                animate={controls}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+              >
+                <div className="point-index flex items-center justify-center bg-grottoblue text-white border-4 border-grottoblue rounded-full h-10 w-10 text-lg font-bold">
+                  {step.number}
+                </div>
+                <div className="point-label flex items-center ml-4 space-x-4">
+                  <lord-icon
+                    src={step.icon}
+                    trigger="loop"
+                    delay="1000"
+                    colors="primary:#189AB4,secondary:#75E6DA"
+                    stroke="bold"
+                    style={{ width: "80px", height: "80px" }}
+                  />
+                  <h5 className="text-navyblue font-medium text-sm md:text-lg">
+                    {step.title}
+                  </h5>
+                </div>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
-      <div className="flex justify-center mb-5 ">
+      <div className="flex justify-center mb-5">
         <a
           href="/contact-us"
           className="bg-grottoblue text-white px-4 py-2 rounded"

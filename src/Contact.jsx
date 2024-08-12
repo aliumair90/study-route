@@ -1,11 +1,11 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import TestimonialSlider from "./TestimonialSlider";
 
 const Contact = () => {
   return (
     <>
-      <div className=" py-16">
+      <div className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-8">
             Our Contacts
@@ -38,7 +38,7 @@ const Contact = () => {
                     <h4 className="text-lg font-semibold text-gray-900">
                       Location
                     </h4>
-                    <p className="text-gray-700">XYZ, Lahore</p>
+                    <p className="text-gray-700">Collabs Gulberg ,Lahore </p>
                   </div>
                 </div>
                 <div className="flex items-start p-4 bg-white rounded-lg shadow-lg">
@@ -53,7 +53,7 @@ const Contact = () => {
                     <h4 className="text-lg font-semibold text-gray-900">
                       Phone Number
                     </h4>
-                    <p className="text-gray-700">+92 123 456 789</p>
+                    <p className="text-gray-700">+92 309 8488442</p>
                   </div>
                 </div>
                 <div className="flex items-start p-4 bg-white rounded-lg shadow-lg">
@@ -73,7 +73,12 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <div className="bg-grottoblue p-8 lg:mt-[-66px] rounded-lg shadow-lg">
+            <motion.div
+              className="bg-grottoblue p-8 lg:mt-[-66px] rounded-lg shadow-lg"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+            >
               <h3 className="text-2xl font-bold text-white mb-4">
                 Send Your Message
               </h3>
@@ -81,8 +86,18 @@ const Contact = () => {
                 Please feel free to get in touch with us using the contact form
                 below. We’d love to hear from you.
               </p>
-              <form className="space-y-4">
-                <div className="flex flex-col md:flex-row md:space-x-4">
+              <motion.form
+                className="space-y-4"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+              >
+                <motion.div
+                  className="flex flex-col md:flex-row md:space-x-4"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                >
                   <input
                     type="text"
                     className="w-full p-3 mb-4 md:mb-0 rounded bg-white text-gray-800"
@@ -93,40 +108,46 @@ const Contact = () => {
                     className="w-full p-3 mb-4 md:mb-0 rounded bg-white text-gray-800"
                     placeholder="Your Email"
                   />
-                </div>
-                <div className="flex flex-col md:flex-row md:space-x-4">
+                </motion.div>
+                <motion.div
+                  className="flex flex-col md:flex-row md:space-x-4"
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.4 }}
+                >
                   <input
                     type="text"
                     className="w-full p-3 mb-4 md:mb-0 rounded bg-white text-gray-800"
                     placeholder="City"
                   />
-                  {/* <select className="w-full p-3 mb-4 md:mb-0 rounded bg-white text-gray-800">
-                    <option>Select Country</option>
-                    <option>Pakistan</option>
-                    <option>India</option>
-                    <option>USA</option>
-                    <option>UK</option>
-                    <option>Canada</option>
-                  </select> */}
-                </div>
-                <input
+                </motion.div>
+                <motion.input
                   type="text"
                   className="w-full p-3 mb-4 rounded bg-white text-gray-800"
                   placeholder="Phone Number"
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
                 />
-                <textarea
+                <motion.textarea
                   className="w-full p-3 mb-4 rounded bg-white text-gray-800"
                   placeholder="Message"
                   rows="4"
-                ></textarea>
-                <button
+                  initial={{ opacity: 0, x: 20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.6 }}
+                ></motion.textarea>
+                <motion.button
                   type="submit"
                   className="w-full p-3 bg-navyblue text-white font-semibold rounded"
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ duration: 0.3 }}
                 >
                   SEND
-                </button>
-              </form>
-            </div>
+                </motion.button>
+              </motion.form>
+            </motion.div>
           </div>
         </div>
       </div>

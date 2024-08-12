@@ -10,8 +10,8 @@ const Footer = () => {
             <div>
               <img src="Logo-bgr.png" alt="Logo" className="w-24 mb-4" />
               <p>
-                Study Route Overseas Education is one of the fastest growing
-                education and career networks in Pakistan.
+                Study Route is one of the fastest growing education and career
+                networks in Pakistan.
               </p>
               <div className="flex space-x-4 mt-4">
                 <a href="#" aria-label="Facebook">
@@ -36,8 +36,8 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact With Us</h3>
               <p className="mb-2">Email: info@study-route.com</p>
-              <p className="mb-2">Phone: +92 123 456 789</p>
-              <p className="mb-2">Address: xyz, Lahore</p>
+              <p className="mb-2">Phone: +92 309 8488442</p>
+              <p className="mb-2">Address: Collabs Gulberg ,Lahore </p>
             </div>
 
             {/* Navigation Links */}

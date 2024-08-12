@@ -1,21 +1,30 @@
 import React from "react";
-
+import { motion } from "framer-motion";
 import Register from "./Register";
 
 const OnlineConsultant = () => {
   return (
     <>
-      <br />
-      <br />
-      <div>
-        <h1 className="text-3xl font-bold text-center">
-          Secure a Spot for Yourself with Our Online Consultation <br />
-          for Overseas Educational Opportunities
-        </h1>
-      </div>
-      <br />
-      <br />
-      <div>
+      <motion.div
+        className="py-16"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+      >
+        <div className="text-center">
+          <h1 className="text-3xl font-bold">
+            Secure a Spot for Yourself with Our Online Consultation <br />
+            for Overseas Educational Opportunities
+          </h1>
+        </div>
+      </motion.div>
+
+      <motion.div
+        className="py-8"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, delay: 0.5 }}
+      >
         <p className="text-center w-[70%] text-xl mx-auto">
           Feeling overwhelmed by endless overseas study searches? Take a deep
           breath and let Study Route be your guide! Connect with our expert
@@ -24,10 +33,16 @@ const OnlineConsultant = () => {
           cover everything you need! Discuss with us your study options, find
           your perfect fit, and receive application assistance – all online!
         </p>
-      </div>
-      <br />
-      <br />
-      <Register />
+      </motion.div>
+
+      <motion.div
+        className="py-8"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, delay: 1 }}
+      >
+        <Register />
+      </motion.div>
     </>
   );
 };

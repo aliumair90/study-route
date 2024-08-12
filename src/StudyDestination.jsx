@@ -1,13 +1,33 @@
 import React from "react";
-
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 import Test1 from "./Test1";
 
 const StudyDestination = () => {
+  // Hooks for monitoring when components come into view
+  const [ref1, inView1] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref2, inView2] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref3, inView3] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref4, inView4] = useInView({ triggerOnce: true, threshold: 0.1 });
+  const [ref5, inView5] = useInView({ triggerOnce: true, threshold: 0.1 });
+
   return (
     <>
-      <div className="relative bg-gray-100 w-full py-10">
+      {/* First Section */}
+      <motion.div
+        className="relative bg-gray-100 w-full py-10"
+        ref={ref1}
+        initial={{ opacity: 0 }}
+        animate={inView1 ? { opacity: 1 } : {}}
+        transition={{ duration: 2 }}
+      >
         <div className="container w-[80%] mx-auto flex flex-col lg:flex-row items-center px-6 lg:px-0">
-          <div className="lg:w-1/2">
+          <motion.div
+            className="lg:w-1/2"
+            initial={{ x: "-100vw" }}
+            animate={inView1 ? { x: 0 } : {}}
+            transition={{ type: "spring", stiffness: 50, duration: 2 }}
+          >
             <h1 className="md:text-6xl sm:text-4xl lg:text-8xl font-extrabold text-grottoblue mb-4">
               Study In UK From Pakistan
             </h1>
@@ -15,19 +35,37 @@ const StudyDestination = () => {
               Get your hands on one of the best consultants who guide you on how
               to study in the UK from Pakistan.
             </p>
-          </div>
-          <div className="lg:w-1/2 flex justify-center relative mt-10 lg:mt-0">
+          </motion.div>
+          <motion.div
+            className="lg:w-1/2 flex justify-center relative mt-10 lg:mt-0"
+            initial={{ x: "100vw" }}
+            animate={inView1 ? { x: 0 } : {}}
+            transition={{ type: "spring", stiffness: 50, duration: 2 }}
+          >
             <img
               src="./Jahaz.png"
               alt="Big Ben"
-              className="rounded-full w-full  "
+              className="rounded-full w-full"
             />
-          </div>
+          </motion.div>
         </div>
-      </div>
-      <div className="relative bg-grottoblue text-white py-6 px-4 sm:py-20 sm:px-6 lg:px-8">
+      </motion.div>
+
+      {/* Second Section */}
+      <motion.div
+        className="relative bg-grottoblue text-white py-6 px-4 sm:py-20 sm:px-6 lg:px-8"
+        ref={ref2}
+        initial={{ opacity: 0 }}
+        animate={inView2 ? { opacity: 1 } : {}}
+        transition={{ duration: 2, delay: 0.3 }}
+      >
         <div className="max-w-7xl mx-auto w-[80%] flex flex-col lg:flex-row items-center">
-          <div className="lg:w-1/2 mb-8 lg:mb-0">
+          <motion.div
+            className="lg:w-1/2 mb-8 lg:mb-0"
+            initial={{ x: "-100vw" }}
+            animate={inView2 ? { x: 0 } : {}}
+            transition={{ type: "spring", stiffness: 50, duration: 2 }}
+          >
             <h2 className="text-babyblue text-sm sm:text-base md:text-lg font-semibold mb-2">
               Study in UK
             </h2>
@@ -58,59 +96,94 @@ const StudyDestination = () => {
               students; they will have an extra degree, and they could get a
               better job.
             </p>
-          </div>
-          <div className="lg:w-1/2 flex justify-center relative">
-            {/* <img
-              src="path/to/big-ben-image.png"
-              alt="Big Ben"
-              className="w-24 sm:w-32 md:w-40 lg:w-48 xl:w-60 h-auto"
-            /> */}
+          </motion.div>
+          <motion.div
+            className="lg:w-1/2 flex justify-center relative"
+            initial={{ x: "100vw" }}
+            animate={inView2 ? { x: 0 } : {}}
+            transition={{
+              type: "spring",
+              stiffness: 50,
+              duration: 2,
+              delay: 0.2,
+            }}
+          >
             <img
               src="./Studyinuk.png"
               alt="Student"
-              className=" left-1/2  w-full w-max-md mt-0"
+              className="left-1/2 w-full w-max-md mt-0"
             />
-            {/* <img
-              src="path/to/other-building-image.png"
-              alt="Building"
-              className="absolute bottom-0 right-0 w-24 sm:w-32 md:w-40 lg:w-48 xl:w-60 h-auto"
-            /> */}
-          </div>
+          </motion.div>
         </div>
-      </div>
-      <div>
-        <div className=" w-[80%] mx-auto   p-8 ">
+      </motion.div>
+
+      {/* Third Section */}
+      <motion.div
+        ref={ref3}
+        initial={{ opacity: 0 }}
+        animate={inView3 ? { opacity: 1 } : {}}
+        transition={{ duration: 2, delay: 0.4 }}
+      >
+        <div className="w-[80%] mx-auto p-8">
           <section className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2">
-              <h1 className="text-4xl font-bold  mb-4">
+            <motion.div
+              className="md:w-1/2"
+              initial={{ x: "-100vw" }}
+              animate={inView3 ? { x: 0 } : {}}
+              transition={{ type: "spring", stiffness: 50, duration: 2 }}
+            >
+              <h1 className="text-4xl font-bold mb-4">
                 What are the UK Study Visa Requirements?
               </h1>
-              <p className=" mb-4">
+              <p className="mb-4">
                 Some basics need to be checked before applying for a study visa,
                 especially if you want to study in the UK:
               </p>
-              <ul className="list-disc list-inside  text-lg">
+              <ul className="list-disc list-inside text-lg">
                 <li>Official academic documents</li>
                 <li>Personal documents</li>
                 <li>Letters of recommendation</li>
                 <li>Statement</li>
                 <li>Passport copy</li>
               </ul>
-            </div>
-            <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center">
+            </motion.div>
+            <motion.div
+              className="md:w-1/2 mt-6 md:mt-0 flex justify-center"
+              initial={{ x: "100vw" }}
+              animate={inView3 ? { x: 0 } : {}}
+              transition={{
+                type: "spring",
+                stiffness: 50,
+                duration: 2,
+                delay: 0.2,
+              }}
+            >
               <img
                 src="/Passport.png"
                 alt="Visa Documents"
                 className="max-w-full h-auto"
               />
-            </div>
+            </motion.div>
           </section>
         </div>
-      </div>
-      <div className="bg-grottoblue  flex items-center justify-center p-6">
-        <div className="bg-grottoblue  p-8 w-full max-w-6xl">
+      </motion.div>
+
+      {/* Fourth Section */}
+      <motion.div
+        className="bg-grottoblue flex items-center justify-center p-6"
+        ref={ref4}
+        initial={{ opacity: 0 }}
+        animate={inView4 ? { opacity: 1 } : {}}
+        transition={{ duration: 2, delay: 0.5 }}
+      >
+        <div className="bg-grottoblue p-8 w-full max-w-6xl">
           <section className="flex flex-col md:flex-row items-center">
-            <div className="md:w-1/2 p-4">
+            <motion.div
+              className="md:w-1/2 p-4"
+              initial={{ x: "-100vw" }}
+              animate={inView4 ? { x: 0 } : {}}
+              transition={{ type: "spring", stiffness: 50, duration: 2 }}
+            >
               <h1 className="text-4xl font-bold text-white mb-4">
                 What is the UK Study Visa Fee From Pakistan?
               </h1>
@@ -134,18 +207,37 @@ const StudyDestination = () => {
                   Discounted Fee: 150.00 to 300.00 (personal student fee in GBP)
                 </li>
               </ul>
-            </div>
-            <div className="md:w-1/2 p-4 flex flex-wrap justify-center">
+            </motion.div>
+            <motion.div
+              className="md:w-1/2 p-4 flex flex-wrap justify-center"
+              initial={{ x: "100vw" }}
+              animate={inView4 ? { x: 0 } : {}}
+              transition={{
+                type: "spring",
+                stiffness: 50,
+                duration: 2,
+                delay: 0.2,
+              }}
+            >
               <img
                 src="/Visafees.png"
                 alt="Image 1"
                 className="max-w-full h-auto"
               />
-            </div>
+            </motion.div>
           </section>
         </div>
-      </div>
-      <Test1 />
+      </motion.div>
+
+      {/* Test1 Component */}
+      <motion.div
+        ref={ref5}
+        initial={{ opacity: 0 }}
+        animate={inView5 ? { opacity: 1 } : {}}
+        transition={{ duration: 2, delay: 0.6 }}
+      >
+        <Test1 />
+      </motion.div>
     </>
   );
 };
