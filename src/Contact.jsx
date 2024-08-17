@@ -38,7 +38,7 @@ const Contact = () => {
                     <h4 className="text-lg font-semibold text-gray-900">
                       Location
                     </h4>
-                    <p className="text-gray-700">Collabs Gulberg ,Lahore </p>
+                    <p className="text-gray-700">Collabs Gulberg III,Lahore </p>
                   </div>
                 </div>
                 <div className="flex items-start p-4 bg-white rounded-lg shadow-lg">
@@ -53,7 +53,7 @@ const Contact = () => {
                     <h4 className="text-lg font-semibold text-gray-900">
                       Phone Number
                     </h4>
-                    <p className="text-gray-700">+92 309 8488442</p>
+                    <p className="text-gray-700">+92 328 1358083</p>
                   </div>
                 </div>
                 <div className="flex items-start p-4 bg-white rounded-lg shadow-lg">

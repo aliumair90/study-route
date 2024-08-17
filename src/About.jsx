@@ -71,9 +71,8 @@ const About = () => {
         initial={{ opacity: 0, y: 50 }}
         animate={inView2 ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 2 }}
-      >
-        <Benefits />
-      </motion.div>
+      ></motion.div>
+      <Benefits />
     </>
   );
 };

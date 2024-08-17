@@ -48,7 +48,7 @@ const Home = () => {
             </p>
             <motion.a
               href="/contact-us"
-              className="bg-white text-teal-700 py-2 px-4 rounded-full font-semibold hover:bg-navyblue"
+              className="bg-white text-grottoblue py-2 px-4 rounded-full font-semibold hover:bg-navyblue"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
@@ -67,23 +67,23 @@ const Home = () => {
             }}
           >
             <img
-              src="Student.png"
+              src="/Main.jpg"
               alt="Student"
-              className="w-full md:w-3/4 lg:w-2/3 rounded-lg shadow-lg"
+              className="w-full md:w-3/4 lg:w-2/3 sm:w-3/4 rounded-lg shadow-lg"
             />
           </motion.div>
         </motion.div>
       </motion.div>
 
       <motion.div
-        className="bg-gray-50 py-16 px-8"
+        className=" py-16 w-[85%] mx-auto"
         ref={ref2}
         initial={{ opacity: 0 }}
         animate={inView2 ? { opacity: 1 } : {}}
         transition={{ duration: 2, delay: 0.3 }}
       >
         <div className="max-w-6xl mx-auto">
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:text-start md:flex-row text-center">
             {/* Text Section */}
             <motion.div
               className="flex-1 mb-5 md:mb-0"
@@ -127,11 +127,11 @@ const Home = () => {
               }}
             >
               <div className="flex flex-wrap justify-center items-center">
-                <div className="m-2">
+                <div className="flex justify-center">
                   <img
-                    src="/Album.png"
+                    src="/Intro.jpg"
                     alt="Group Meeting"
-                    className="rounded-lg h-96 shadow-lg"
+                    className="rounded-lg w-full md:w-3/4 lg:w-2/3 sm:w-3/4 shadow-lg"
                   />
                 </div>
               </div>

@@ -20,7 +20,7 @@ const Header = () => {
           <div className="flex flex-col md:flex-row md:space-x-4 items-center">
             <div className="flex items-center space-x-1">
               <i className="fas fa-phone-alt"></i>
-              <span>+92 309 8488442</span>
+              <span>+92 328 1358083 </span>
             </div>
             <div className="flex items-center space-x-1 mt-2 md:mt-0">
               <i className="fas fa-envelope"></i>
@@ -28,7 +28,7 @@ const Header = () => {
             </div>
           </div>
           <div className="flex space-x-4 mt-2 md:mt-0">
-            <a href="#">
+            <a href="https://www.facebook.com/profile.php?id=61564266875594&mibextid=ZbWKwL">
               <i className="fab fa-facebook-f"></i>
             </a>
             <a href="#">
@@ -36,12 +36,6 @@ const Header = () => {
             </a>
             <a href="#">
               <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-youtube"></i>
-            </a>
-            <a href="#">
-              <i className="fab fa-tiktok"></i>
             </a>
           </div>
         </div>
@@ -55,7 +49,7 @@ const Header = () => {
             </a>
           </div>
 
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center mr-4">
             <button
               className="text-grottoblue focus:outline-none"
               onClick={toggleMenu}
@@ -66,7 +60,7 @@ const Header = () => {
             </button>
           </div>
 
-          <ul className="space-x-8 text-grottoblue font-medium hidden md:flex">
+          <ul className="md:space-x-4 lg:space-x-8 lg:text-base text-grottoblue md:text-sm font-medium hidden md:flex">
             <li>
               <a href="/" className="hover:text-teal-500">
                 Home

@@ -2,6 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import TestimonialSlider from "./TestimonialSlider";
+import Register from "./Register";
 
 const benefits = [
   {
@@ -84,6 +85,7 @@ const Benefits = () => {
       >
         <TestimonialSlider />
       </motion.div>
+      <Register />
     </>
   );
 };

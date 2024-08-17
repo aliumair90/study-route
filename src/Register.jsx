@@ -19,7 +19,7 @@ const Register = () => {
       <div
         className="relative bg-cover bg-center h-screen"
         style={{
-          backgroundImage: "url('ireland.jpg')",
+          backgroundImage: "url('Abc.jpg')",
         }}
       >
         <div className="absolute inset-0 bg-black opacity-30"></div>

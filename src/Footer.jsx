@@ -14,7 +14,10 @@ const Footer = () => {
                 networks in Pakistan.
               </p>
               <div className="flex space-x-4 mt-4">
-                <a href="#" aria-label="Facebook">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61564266875594&mibextid=ZbWKwL"
+                  aria-label="Facebook"
+                >
                   <i className="fab fa-facebook-f"></i>
                 </a>
                 <a href="#" aria-label="Instagram">
@@ -23,12 +26,6 @@ const Footer = () => {
                 <a href="#" aria-label="LinkedIn">
                   <i className="fab fa-linkedin-in"></i>
                 </a>
-                <a href="#" aria-label="YouTube">
-                  <i className="fab fa-youtube"></i>
-                </a>
-                <a href="#" aria-label="TikTok">
-                  <i className="fab fa-tiktok"></i>
-                </a>
               </div>
             </div>
 
@@ -36,8 +33,8 @@ const Footer = () => {
             <div>
               <h3 className="text-lg font-semibold mb-4">Contact With Us</h3>
               <p className="mb-2">Email: info@study-route.com</p>
-              <p className="mb-2">Phone: +92 309 8488442</p>
-              <p className="mb-2">Address: Collabs Gulberg ,Lahore </p>
+              <p className="mb-2">Phone: +92 328 1358083</p>
+              <p className="mb-2">Address: Collabs Gulberg III ,Lahore </p>
             </div>
 
             {/* Navigation Links */}

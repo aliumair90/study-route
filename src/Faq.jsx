@@ -11,7 +11,7 @@ const Faq = () => {
       question:
         "Do Study Route have an official liaison with universities on the panel?",
       answer:
-        "Yes, Study Route Overseas Consultants (Pvt.) Ltd is an official representative in Pakistan of all foreign universities on the panel.",
+        "Yes, Study Route is an official representative in Pakistan of all foreign universities on the panel.",
     },
     {
       question:

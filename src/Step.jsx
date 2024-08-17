@@ -71,7 +71,7 @@ const StepProcess = () => {
           to an excellent higher education abroad.
         </p>
       </div>
-      <div className="roadmap bg-white py-10">
+      <div className="roadmap w-[75%] mx-auto bg-white py-10">
         <div className="max-w-4xl md:mx-auto space-y-8 mx-4 ">
           {steps.map((step, index) => {
             const { ref, inView } = useInView({
